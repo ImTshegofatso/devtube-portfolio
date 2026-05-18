@@ -27,7 +27,7 @@ export default function Home() {
 
         <ProfileBanner />
 
-        {/* ✅ HOME */}
+        {/* HOME */}
         <div id="home" className="scroll-mt-28">
           <CategoryPills
             activeCategory={activeCategory}
@@ -35,17 +35,17 @@ export default function Home() {
           />
         </div>
 
-        {/* ✅ VIDEOS / PROJECTS */}
+        {/* VIDEOS / PROJECTS */}
         <div id="videos" className="scroll-mt-28">
           <VideoGrid videos={filteredVideos} />
         </div>
 
-        {/* ✅ SHORTS */}
+        {/* SHORTS */}
         <div id="shorts" className="scroll-mt-28">
           <ShortsSection />
         </div>
 
-        {/* ✅ ABOUT */}
+        {/* ABOUT */}
         <div id="about" className="scroll-mt-28">
           <AboutSection />
         </div>
