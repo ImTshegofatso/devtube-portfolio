@@ -2,7 +2,7 @@ import { profile } from '../data/data.js';
 
 export default function AboutSection() {
 
-  // ✅ Silent CV tracking
+  // Silent CV tracking
   const handleDownload = async () => {
     try {
       await fetch(profile?.formspreeEndpoint || '', {
@@ -25,7 +25,7 @@ export default function AboutSection() {
   return (
     <div className="px-4 py-8 border-t border-gray-200 dark:border-yt-gray">
 
-      {/* ✅ HEADER */}
+      {/* HEADER */}
       <div className="flex items-start gap-4 mb-6">
 
         <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
@@ -56,7 +56,7 @@ export default function AboutSection() {
 
       </div>
 
-      {/* ✅ CV BUTTON */}
+      {/* CV BUTTON */}
       <div className="mb-6">
         <a
           href="/cv/Tshegofatso-Nkosi-CV.pdf"
@@ -71,12 +71,12 @@ export default function AboutSection() {
         </a>
       </div>
 
-      {/* ✅ BIO */}
+      {/* BIO */}
       <p className="text-sm text-gray-700 dark:text-yt-textSecondary mb-6 max-w-3xl">
         {profile?.bio || "No bio available"}
       </p>
 
-      {/* ✅ SKILLS */}
+      {/* SKILLS */}
       <div className="flex flex-wrap gap-2 mb-6">
         {profile?.skills?.length ? (
           profile.skills.map((skill, index) => (
@@ -92,7 +92,7 @@ export default function AboutSection() {
         )}
       </div>
 
-      {/* ✅ CONTACT */}
+      {/* CONTACT */}
       <div className="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-yt-textSecondary">
 
         {profile?.email && (
@@ -120,7 +120,7 @@ export default function AboutSection() {
 
       </div>
 
-      {/* ✅ SOCIALS */}
+      {/* SOCIALS */}
       <div className="flex items-center gap-3 mt-5 pt-5 border-t border-gray-200 dark:border-yt-gray">
 
         {profile?.github && (
